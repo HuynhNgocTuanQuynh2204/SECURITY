@@ -1,193 +1,196 @@
-    * {
-        padding: 0px;
-        margin: 0px;
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+#toggle {
+    background: #353b48;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 15px 0px;
+    transition: all 0.5s;
+    z-index: 1000;
+}
+
+header.sticky {
+    background: #fff;
+    opacity: 0.9;
+    padding: 10px 0px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky #main-menu a {
+    color: #000;
+}
+
+header.sticky #logo {
+    color: #000;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+ul#main-menu {
+    display: flex;
+}
+
+ul#main-menu a {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+}
+
+ul#main-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+}
+
+nav #main-menu li:hover a {
+    color: #c23616;
+    transition: all 0.3s;
+}
+
+.box-submenu {
+    display: none;
+}
+
+#main-menu li:hover .box-submenu {
+    display: block;
+    position: absolute;
+    background: #dfff;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+ul#main-menu li:hover .box-submenu {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#main-menu li:hover .box-submenu li {
+    width: 220px;
+    text-align: left;
+    border-bottom: dotted 1px #fff;
+    background: transparent;
+    border-radius: 0;
+    padding: 15px;
+    margin: 10px;
+}
+
+ul#main-menu li:hover .box-submenu li a {
+    color: black;
+}
+
+ul#main-menu li:hover .box-submenu li:last-child {
+    border-bottom: none;
+}
+
+ul#main-menu li:hover .box-submenu li a:hover {
+    color: #c23616;
+}
+
+#banner {
+    background: url(../Images/hacker-nga-1646146686700.jpg);
+    min-height: 900px;
+    width: 100%;
+    background-size: cover;
+}
+
+#content h1 {
+    padding: 30px 0px;
+}
+
+#content p {
+    margin-bottom: 1.2rem;
+}
+
+.content h4 {
+    padding: 10px 0px;
+}
+
+.content h5 {
+    padding: 10px 0px;
+}
+
+footer {
+    width: 100%;
+    background: gray;
+}
+
+#footer {
+    padding: 0px 100px;
+}
+
+@media screen and (max-width:768px) {
+    #main-menu {
+        flex-direction: column;
+        background-color: #fff;
     }
-    
-    ul {
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .container {
-        margin: 0px auto;
-        max-width: 960px;
-    }
-    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #fff;
-        background-color: #000;
-    }
-    
-    #toggle {
-        background: #353b48;
-        padding: 10px;
-        font-size: 20px;
-        cursor: pointer;
-        display: none;
-    }
-    
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        border-bottom: 1px solid #f5f5f5;
-        padding: 15px 0px;
-        transition: all 0.5s;
-        z-index: 1000;
-    }
-    
-    header.sticky {
-        background: #fff;
-        opacity: 0.9;
-        padding: 10px 0px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-    }
-    
-    header.sticky #main-menu a {
-        color: #000;
-    }
-    
-    header.sticky #logo {
-        color: #000;
-    }
-    
-    .inner-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #logo {
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-    }
-    
-    ul#main-menu {
-        display: flex;
-    }
-    
-    ul#main-menu a {
-        text-transform: uppercase;
-        padding: 10px 20px;
-        color: #fff;
-        display: block;
-        font-weight: bold;
-    }
-    
     ul#main-menu li a {
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
+        color: #000;
+    }
+    #toggle {
         display: block;
-        padding: 5px 15px;
     }
-    
-    nav #main-menu li:hover a {
-        color: #c23616;
-        transition: all 0.3s;
-    }
-    
-    .box-submenu {
+    nav {
         display: none;
     }
-    
-    #main-menu li:hover .box-submenu {
-        display: block;
-        position: absolute;
-        background: #dfff;
-        margin-top: 15px;
-        margin-left: -15px;
-    }
-    
-    ul#main-menu li:hover .box-submenu {
-        display: block;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    ul#main-menu li:hover .box-submenu li {
-        width: 220px;
-        text-align: left;
-        border-bottom: dotted 1px #fff;
-        background: transparent;
-        border-radius: 0;
-        padding: 15px;
-        margin: 10px;
-    }
-    
-    ul#main-menu li:hover .box-submenu li a {
-        color: black;
-    }
-    
-    ul#main-menu li:hover .box-submenu li:last-child {
-        border-bottom: none;
-    }
-    
-    ul#main-menu li:hover .box-submenu li a:hover {
-        color: #c23616;
-    }
-    
     #banner {
         background: url(../Images/hacker-nga-1646146686700.jpg);
-        min-height: 900px;
+        min-height: 250px;
         width: 100%;
         background-size: cover;
     }
-    
-    #content h1 {
-        padding: 30px 0px;
+    #logo {
+        display: none;
     }
-    
-    #content p {
-        margin-bottom: 1.2rem;
-    }
-    
-    .content h4 {
-        padding: 10px 0px;
-    }
-    
-    .content h5 {
-        padding: 10px 0px;
-    }
-    
-    footer {
-        width: 100%;
-        background: gray;
-    }
-    
     #footer {
-        padding: 0px 100px;
+        padding: 0px 50px;
     }
-    
-    @media screen and (max-width:768px) {
-        #main-menu {
-            flex-direction: column;
-            background-color: #fff;
-        }
-        ul#main-menu li a {
-            color: #000;
-        }
-        #toggle {
-            display: block;
-        }
-        nav {
-            display: none;
-        }
-        #banner {
-            background: url(../Images/hacker-nga-1646146686700.jpg);
-            min-height: 250px;
-            width: 100%;
-            background-size: cover;
-        }
-        #logo {
-            display: none;
-        }
-    }
+}
