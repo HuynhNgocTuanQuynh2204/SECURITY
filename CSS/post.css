@@ -11,6 +11,7 @@ body {
 
 #container {
     padding: 60px 15px;
+    font-size: 20px;
 }
 
 a {
@@ -147,4 +148,39 @@ footer {
     text-align: center;
     font-size: 12px;
     font-weight: lighter;
+}
+
+
+/* For the smartphones */
+
+@media screen and (max-width: 460px) {
+    #container {
+        margin: 0px;
+        padding: 70px 0px;
+        font-size: 18px;
+    }
+    .table-row .status,
+    .table-row .subjects,
+    .table-row .replies,
+    .table-row .last-reply {
+        padding: 15px;
+        margin: 3px;
+    }
+}
+
+
+/* For the tablets */
+
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    #container {
+        margin: 0px;
+        padding: 70px 0px;
+    }
+    .table-row .status,
+    .table-row .subjects,
+    .table-row .replies,
+    .table-row .last-reply {
+        padding: 15px;
+        margin: 3px;
+    }
 }

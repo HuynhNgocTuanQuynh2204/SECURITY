@@ -6,7 +6,7 @@
  
  body {
      background-image: url();
-     font-size: 14px;
+     font-size: 16px;
      color: #111;
      line-height: 1.15;
  }
@@ -24,12 +24,11 @@
  
  h3 {
      font-size: 18px;
-     color: #111;
      padding: 10px 20px;
      text-transform: uppercase;
      border: 1px solid #bebebe;
      display: inline-block;
-     color: #555;
+     color: red;
      font-weight: 600;
  }
  

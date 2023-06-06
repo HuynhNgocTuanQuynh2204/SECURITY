@@ -108,6 +108,7 @@ footer {
 }
 
 #GT {
+    font-size: 20px;
     padding: 40px 0px;
 }
 
@@ -119,13 +120,16 @@ footer {
         margin: 20px;
         padding: 30px 0px;
     }
+    #GT {
+        font-size: 18px;
+    }
     .subforum-row {
         display: grid;
         grid-template-columns: 25% 75%;
         grid-template-rows: 65% 35%;
+        margin: 0px auto;
     }
     .subforum-devider {
-        display: block;
         border: 0;
         height: 1px;
         background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
@@ -139,6 +143,9 @@ footer {
     #container {
         margin: 20px;
         padding: 30px 0px;
+    }
+    #GT {
+        font-size: 18px;
     }
     .subforum-row {
         display: grid;
