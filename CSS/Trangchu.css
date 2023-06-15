@@ -158,6 +158,10 @@
      transition: 2s;
  }
  
+ .slide a:hover {
+     filter: brightness(70%);
+ }
+ 
  .slide img {
      width: 100%;
      height: 500px;

@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #FF0042;
+    color: #0ef;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -107,7 +107,7 @@ h1 {
 }
 
 .navigate a:hover {
-    color: #FF0042;
+    color: #0ef;
     font-weight: bolder;
 }
 
