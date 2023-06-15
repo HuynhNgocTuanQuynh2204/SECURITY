@@ -22,14 +22,6 @@ h1 {
     font-weight: bolder;
 }
 
-footer {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: black;
-    display: block;
-    text-align: center;
-}
-
 
 /* Congdong.html */
 
@@ -57,6 +49,10 @@ footer {
     margin-bottom: 0.5px;
     margin-left: 100px;
     margin-right: 5px;
+}
+
+p {
+    text-align: justify;
 }
 
 .subforum-column {
