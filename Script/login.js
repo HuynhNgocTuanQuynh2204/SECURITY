@@ -20,3 +20,15 @@ $(document).ready(function() {
         }
     });
 });
+
+function dangnhap() {
+    event.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if (username == 'tuanquynh2204' && password == '2204') {
+        alert('Đăng nhập thành công')
+        window.location.assign('../index.html');
+    } else {
+        alert('Tài khoản hoặc mật khẩu không chính xác')
+    }
+}
