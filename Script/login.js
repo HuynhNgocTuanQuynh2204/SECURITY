@@ -28,6 +28,12 @@ function dangnhap() {
     if (username == 'tuanquynh2204' && password == '2204') {
         alert('Đăng nhập thành công')
         window.location.assign('../index.html');
+    } else if (username == '' && password == '') {
+        alert('Chưa nhập tài khoản hoặc mật khẩu')
+    } else if (username == '') {
+        alert('Vui lòng điền nhập tài khoản')
+    } else if (password == '') {
+        alert('Vui lòng điền nhập mật khẩu')
     } else {
         alert('Tài khoản hoặc mật khẩu không chính xác')
     }
