@@ -21,35 +21,35 @@ $(document).ready(function() {
     });
 });
 
-// function dangnhap() {
-//     event.preventDefault();
-//     var username = document.getElementById('username').value;
-//     var password = document.getElementById('password').value;
-//     if (username == 'tuanquynh2204' && password == '2204') {
-//         alert('Đăng nhập thành công')
-//         window.location.assign('../index.html');
-//     } else if (username == '' && password == '') {
-//         alert('Chưa nhập tài khoản hoặc mật khẩu')
-//     } else if (username == '') {
-//         alert('Vui lòng điền nhập tài khoản')
-//     } else if (password == '') {
-//         alert('Vui lòng điền nhập mật khẩu')
-//     } else {
-//         alert('Tài khoản hoặc mật khẩu không chính xác')
-//     }
-// }
+
 function dangky(e) {
     event.preventDefault();
+    var name = document.getElementById("name").value;
+    var date = document.getElementById("date").value;
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-    var user = {
-        username: username,
-        password: password,
+    var password1 = document.getElementById('password1').value;
+
+    if (name === '' || date === '' || username === '' || password === '' || password1 === '') {
+        alert('Vui lòng nhập đầy đủ thông tin');
+    } else if (password1 !== password) {
+        alert('Mật khẩu không trùng khớp');
+    } else if (localStorage.getItem(username) !== null) {
+        alert('Tên đăng nhập đã tồn tại');
+    } else {
+        var user = {
+            name: name,
+            date: date,
+            username: username,
+            password: password,
+            password1: password1
+        };
+        var json = JSON.stringify(user);
+        localStorage.setItem(username, json);
+        alert('Đăng kí thành công');
     }
-    var json = JSON.stringify(user);
-    localStorage.setItem(username, json);
-    alert('Đăng ký thành công')
 }
+
 
 function dangnhap(e) {
     event.preventDefault();
