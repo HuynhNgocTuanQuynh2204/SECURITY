@@ -27,6 +27,10 @@ body {
     margin-bottom: 30px;
 }
 
+.cla p {
+    padding: 10px 0;
+}
+
 .form-group {
     border-bottom: 1px solid #fff;
     margin-top: 15px;
@@ -101,9 +105,9 @@ body {
 .social a {
     margin: 15px;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .social a:hover {
-    color: #f2726a;
+    color: #0ef;
 }

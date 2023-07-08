@@ -459,7 +459,7 @@ footer .content-footer .link-boxes .box {
 
 .link-boxes .input-box input[type="button"] {
     background: #fff;
-    color: #140B5C;
+    /* color: #140B5C; */
     border: none;
     font-size: 18px;
     font-weight: 500;
